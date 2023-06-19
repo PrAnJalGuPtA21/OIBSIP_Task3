@@ -1,0 +1,82 @@
+
+    body {
+      font-family: Arial, sans-serif;
+   }
+    
+    .container{
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border : 2px solid black;
+        width : 20%;
+        margin-left: 40%;
+        margin-top: 5%;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10%;
+        background: linear-gradient(135deg, rgb(54, 7, 77) 0%, rgb(255, 255, 255) 36%, rgb(78, 0, 75) 100%);
+        
+    }
+
+    .container:hover{
+        box-shadow: 5px 10px black;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .space{
+      margin:5px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+      padding: 3px;
+      margin-top: 2px;
+    }
+    select {
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 5px;
+        padding: 8px 20px;
+        background-color: #4CAF50;
+        color:black;
+        font-size: large;
+        text-decoration: none;
+        border-radius: 20px;
+      }
+    .btn:hover{
+        cursor: pointer;
+        background-color: #3e8e41;
+        box-shadow: 5px 10px #888888;
+    }
+    .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .btn:hover span {
+        padding-right: 25px;
+      }
+      
+      .btn:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
